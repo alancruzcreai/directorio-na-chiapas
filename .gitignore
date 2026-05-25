@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tooling local
+.claude/
+
+# Dependencias (por si en el futuro se agrega build)
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
