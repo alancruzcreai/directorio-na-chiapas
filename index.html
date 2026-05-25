@@ -9,13 +9,24 @@
 <meta name="description" content="Directorio público de los grupos de Narcóticos Anónimos del Área Chiapas Centro. Horarios, direcciones y contacto de las reuniones en Tuxtla, Chiapa de Corzo, Berriozábal, Villaflores y Comitán.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="logo-na.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <a class="skip-link" href="#grupos">Saltar al directorio</a>
+
+<noscript>
+  <style>
+    .menu-toggle, .theme-toggle, .search-field, .filter-row, .clear-filters, .card-cta, .modal { display: none !important; }
+    .nav-primary { position: static !important; transform: none !important; display: flex !important; flex-direction: row !important; }
+    .grupo-card { cursor: default !important; }
+  </style>
+  <div style="background:#1A1B1F;color:#F1EADB;padding:14px var(--pad,20px);text-align:center;font-family:'DM Mono',monospace;font-size:13px">
+    Activá JavaScript para usar los filtros, la búsqueda y ver el detalle de cada grupo. La información básica de cada grupo sigue visible.
+  </div>
+</noscript>
 
 <header class="site-header" id="site-header">
   <div class="header-inner">
@@ -44,7 +55,7 @@
         <span class="clock-label">CHIS</span>
         <span class="clock-time" id="local-time">--:--</span>
       </div>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar entre tema claro y oscuro" title="Cambiar tema">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar entre tema claro y oscuro" aria-pressed="false" title="Cambiar tema">
         <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="12" r="4"/>
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round"/>

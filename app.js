@@ -15,10 +15,12 @@
   const stored = localStorage.getItem('na-theme');
   const initial = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', initial);
+  themeToggle.setAttribute('aria-pressed', initial === 'dark' ? 'true' : 'false');
   themeToggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
+    themeToggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
     localStorage.setItem('na-theme', next);
   });
 
